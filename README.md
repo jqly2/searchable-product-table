@@ -1,3 +1,3 @@
 # react-template
 
-#package.json = npm install
+package.json = npm install
