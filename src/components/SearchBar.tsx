@@ -1,6 +1,6 @@
 import { SetStateAction, Dispatch, FC } from 'react';
 
-interface SearchBarProps {
+type SearchBarProps = {
   filterText:string,
   inStockOnly:boolean,
   onFilterTextChange: Dispatch<SetStateAction<string>>,

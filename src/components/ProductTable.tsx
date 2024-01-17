@@ -1,24 +1,24 @@
 import React from 'react';
 
-interface Product {
+type Product = {
   category: string;
   price:string;
   stocked:boolean;
   name:string;
 }
 
-interface ProductTableProps<T>{
+type ProductTableProps<T> = {
   products: T[];
   filterText:string;
   inStockOnly:boolean;
 }
 
-interface ProductCategoryRowProps {
+type ProductCategoryRowProps = {
   category:string;
   key:string;
 }
 
-interface ProductRowProps{
+type ProductRowProps = {
   product:Product;
   key:string
 }

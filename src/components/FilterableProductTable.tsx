@@ -2,14 +2,14 @@ import {useState, FC} from 'react';
 import SearchBar from './SearchBar';
 import ProductTable from './ProductTable';
 
-interface Product {
+type Product = {
   category: string,
   price:string,
   stocked:boolean,
   name:string
 }
 
-interface FilterableProductTableProps<T> {
+type FilterableProductTableProps<T> = {
   products: T[];
 }
 
