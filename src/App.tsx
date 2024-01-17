@@ -1,14 +1,14 @@
+import FilterableProductTable from './components/FilterableProductTable'; 
+import {PRODUCTS} from './constants';
+
 function App() {
     return (
       <div className="App">
         <header className="App-header">
-            <h1>
-                New App
-            </h1>
-            <p>
-                Edit @ <code>src/App.tsx</code> 
-            </p>
         </header>
+        <body>
+          <FilterableProductTable products={PRODUCTS}/>
+        </body>
       </div>
     );
   }
